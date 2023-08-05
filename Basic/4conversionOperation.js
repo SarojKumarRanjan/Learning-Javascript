@@ -35,6 +35,7 @@ console.log(booleanOne);
 let a1 = 3;
 let b1 = 4;
 
+console.log(String(a1+a2));
 console.log(String(a1),String(b1));
 let a2= String(a1);
 let b2= String(b1);
