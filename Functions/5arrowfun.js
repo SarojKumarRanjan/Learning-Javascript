@@ -23,3 +23,24 @@ user.name="golu";
 
 two(); */
 
+
+const fun = () => {
+    let user1 = "saroj"
+
+    console.log(this);
+}
+
+// fun ();
+
+const arrfun = (num1,num2) => {
+return num1+num2;
+}
+const arrfun1 = (num1,num2) =>  num1+num2;
+
+
+//console.log(arrfun(5,9));
+
+
+// implict return 
+
+//  console.log(arrfun1(5,6));
