@@ -33,3 +33,4 @@ for(const name of b){
 for (const [ key , value] of map) {
     // console.log(key , value); // This prints a key value pair in array from.
 }
+
