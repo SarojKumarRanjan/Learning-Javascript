@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api requests</title>
+</head>
+<body>
+    <h1>
+
+    Just testing the xml data respose from the api call.
+    </h1>
+</body>
+<script>
+
+const url = "https//https://api.github.com/users/SarojKumarRanjan";
+
+const req = new XMLHttpRequest();
+req.open("GET", url);
+req.onreadystatechange = () => {
+    console.log(req.readyState);
+    if(req.readyState === 4){
+        console.log(this.resposeText);
+    }
+}
+
+req.send();
+
+
+</script>
+</html>

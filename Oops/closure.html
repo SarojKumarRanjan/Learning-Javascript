@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+<body style="background-color: #313131;">
+    <button id="red">red</button>
+    <button id="yellow">yellow</button>
+    <button id="green">green</button>
+</body>
+
+<script>
+    function changeHandler(color){
+       return function(){
+            document.body.style.backgroundColor = `${color}`
+        }
+       
+    }
+document.getElementById("red").onclick = changeHandler("red")
+document.getElementById("yellow").onclick = changeHandler("yellow")
+document.getElementById("green").onclick = changeHandler("green")
+</script>
+</html>
